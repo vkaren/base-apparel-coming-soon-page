@@ -1,6 +1,5 @@
 $(document).ready(function() {
-    const submit = $('#submit')
-    submit.click(onEmailSubmit)
+    $('#submit').click(onEmailSubmit)
 
     function onEmailSubmit(){
        const email = $('#email').val()
@@ -8,10 +7,6 @@ $(document).ready(function() {
 
       if(!regexp.test(email)){
         $('#email').addClass('error')
-        return false
-      } else{
-          return true
-      }
+      } 
     }
-  
 })
