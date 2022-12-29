@@ -10,6 +10,7 @@ $(document).ready(function() {
         $('#email').addClass('error')
       } else {
         $('#email').removeClass('error')
+        $('#email').val('')
       }
     }
 })
