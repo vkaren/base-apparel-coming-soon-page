@@ -8,6 +8,8 @@ $(document).ready(function() {
 
       if(!regexp.test(email)){
         $('#email').addClass('error')
-      } 
+      } else {
+        $('#email').removeClass('error')
+      }
     }
 })
